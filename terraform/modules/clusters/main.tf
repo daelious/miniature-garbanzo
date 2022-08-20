@@ -7,10 +7,11 @@ terraform {
   }
 }
 
+// NAME and PROJECT to be passed in via GitHub workflow.
 provider "google" {
   credentials = file("<NAME>.json")
 
-  project = "<PROJECT_ID>"
+  project = "<PROJECT_ID>" 
   region  = "us-east1"
   zone    = "us-east1-c"
 }
